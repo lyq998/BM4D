@@ -43,7 +43,7 @@ clear all;close all;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % modifiable parameters
-sigma             = 11;      % noise standard deviation given as percentage of the
+sigma             = 6;      % noise standard deviation given as percentage of the
                              % maximum intensity of the signal, must be in [0,100]
 distribution      = 'Gauss'; % noise distribution
                              %  'Gauss' --> Gaussian distribution
@@ -59,7 +59,7 @@ do_wiener         = 1;       % Wiener filtering
                              %  0 --> disable Wiener filtering
 verbose           = 1;       % verbose mode
 
-estimate_sigma    = 0;       % enable sigma estimation
+estimate_sigma    = 1;       % enable sigma estimation
 
 phantom           = 'D:\aviris_hyperspectral_data\19920612_AVIRIS_IndianPine_EW-line_R_Gaussnoise.tif'; % name of the phantom raw data
 crop_phantom      = 1;       % experiment on smaller phantom
